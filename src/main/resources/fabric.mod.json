@@ -15,7 +15,7 @@
   "license": "MIT",
   "icon": "assets/icon.png",
 
-  "environment": "*",
+  "environment": "client",
   "entrypoints": {
     "main": [
       "net.tilt.Tilt"
