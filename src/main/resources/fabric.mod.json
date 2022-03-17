@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "tilt",
+  "version": "${version}",
+
+  "name": "Damage Tile Fix",
+  "description": "This mod fixes damage tile issue client-side!",
+  "authors": [
+    "Anonymous1212144"
+  ],
+  "contact": {
+    "website": "https://www.youtube.com/channel/UCStYbXooQ0OjbKz9d3hWKFA/"
+  },
+
+  "license": "MIT",
+  "icon": "assets/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.tilt.Tilt"
+    ]
+  },
+  "mixins": [
+    "tilt.mixins.json"
+  ]
+}

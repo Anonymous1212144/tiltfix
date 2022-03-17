@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.tilt.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "client": [
+    "Knockback"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
