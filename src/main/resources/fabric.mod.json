@@ -9,18 +9,14 @@
     "Anonymous1212144"
   ],
   "contact": {
+    "issues": "https://github.com/Anonymous1212144/tiltfix/issues",
     "homepage": "https://www.youtube.com/channel/UCStYbXooQ0OjbKz9d3hWKFA/"
   },
-
+  
   "license": "MIT",
   "icon": "assets/icon.png",
 
   "environment": "client",
-  "entrypoints": {
-    "main": [
-      "net.tilt.Tilt"
-    ]
-  },
   "mixins": [
     "tilt.mixins.json"
   ]
