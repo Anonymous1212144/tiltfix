@@ -4,7 +4,7 @@
   "version": "${version}",
 
   "name": "Damage Tilt Fix",
-  "description": "This mod fixes damage tile issue client-side!",
+  "description": "This mod fixes the damage tilt bug client-side!",
   "authors": [
     "Anonymous1212144"
   ],
