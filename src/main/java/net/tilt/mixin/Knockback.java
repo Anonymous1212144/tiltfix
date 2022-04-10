@@ -1,10 +1,10 @@
 package net.tilt.mixin;
 
-import net.minecraft.client.MinecraftClient;
-import net.minecraft.client.util.math.MatrixStack;
+import net.minecraft.entity.Entity;
 import net.minecraft.util.math.MathHelper;
+import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.render.GameRenderer;
-import net.minecraft.entity.LivingEntity;
+import net.minecraft.client.util.math.MatrixStack;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
@@ -14,7 +14,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 public class Knockback {
 	@Inject(at = @At("HEAD"), method = "renderWorld")
 	private void bobFix(float f, long j, MatrixStack l, CallbackInfo info) {
-		LivingEntity player = (LivingEntity) MinecraftClient.getInstance().getCameraEntity();
+		Entity player = MinecraftClient.getInstance().getCameraEntity();
 		if (player != null) {
 			double x = player.getVelocity().x;
 			double z = player.getVelocity().z;
