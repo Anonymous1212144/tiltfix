@@ -13,14 +13,11 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 public class Knockback {
 	@Inject(at = @At("HEAD"), method = "renderWorld")
 	private void bobFix(float f, long j, MatrixStack l, CallbackInfo info) {
-		Object entity = ((GameRenderer)(Object)this).getClient().getCameraEntity();
-		if (entity instanceof LivingEntity) {
-			LivingEntity player = (LivingEntity) entity;
+		LivingEntity player = (LivingEntity) MinecraftClient.getInstance().getCameraEntity();
+		if (player != null) {
 			double x = player.getVelocity().x;
 			double z = player.getVelocity().z;
 			player.knockbackVelocity = (float) (MathHelper.atan2(-z, -x) * 57.2957763671875D - (double) player.getYaw());
 		}
-
 	}
-
 }
