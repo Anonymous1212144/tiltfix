@@ -1,6 +1,7 @@
 package net.tilt.mixin;
 
 import net.minecraft.entity.Entity;
+import net.minecraft.entity.LivingEntity;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.render.GameRenderer;
